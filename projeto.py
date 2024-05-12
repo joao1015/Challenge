@@ -128,7 +128,7 @@ def inclui_oficinas(oficinascads):
     oficinascadastradas.append(input("Razao social: "))
     oficinascadastradas.append(input("Cnpj: "))
     oficinascadastradas.append(input("Logadouro: "))
-    oficinascadastradas.append(int(input("numero: ")))
+    oficinascadastradas.append(int(input("Numero: ")))
     oficinascadastradas.append(input("Cep: "))
 
 
@@ -136,11 +136,16 @@ executando = True
 
 # Loop principal
 while executando:
-    print("########################################################-----Bem vindo ao AutoCarePlus------########################################################################"
-    "\nOnde Seu carro e Bem vindo")
-    print("########################################################-----Digite a Opcão desejada:------########################################################################")
-    print("1 - Agendar revisão  \n2 - Realizar AutoDiaguinostico")
-    print("3 - Fale Conosco \n4 - Cadastro de Oficinas parceiras")
+    print("############################################################################################################")
+    print("##                                     Bem-vindo ao AutoCarePlus                                            ##")
+    print("##                        O lugar onde o seu carro recebe o cuidado que merece!                              ##")
+    print("############################################################################################################")
+
+    print("\nPor favor, selecione uma opção:")
+    print("1 - Agendar revisão")
+    print("2 - Realizar AutoDiagnóstico")
+    print("3 - Fale Conosco")
+    print("4 - Cadastro de Oficinas Parceiras")
     print("5 - Sair")
 
     falharificada = 0
@@ -298,7 +303,7 @@ while executando:
                         print("Por favor, digite apenas números.")
 
                 if bateriaverificada == 1:
-                    print("Bateria está carregada. Será necessário agendamento de uma revisão")
+                    print("A bateria está carregada, mas recomendamos agendar uma revisão.")
                 elif bateriaverificada == 2:
                     print("Será necessário a troca da bateria devido ter chego ao fim de sua vida útil")
                 else:
@@ -307,13 +312,13 @@ while executando:
     elif opcao_desejada2 == 3:
         no = input("Nome completo: ")
         email = input("Informe o email: ")
-        telefone = input("Informe o telefone para contato: ")
-        dadosveiculo = input("informe renavam do veiculo")
+        telefone = input("Forneça o número de telefone para contato: ")
+        dadosveiculo = input("Informe o RENAVAM do veículo")
        
         
         Pergunta = input("Pergunta dúvidas: ")
         print("Mais tarde breve entramos em contato")
-        print("Obrigado por utilizar nossos Serviços")
+        print("Entraremos em contato em breve. Obrigado pela paciência.")
 
     elif opcao_desejada2 == 5:
         print("Saindo...")
@@ -325,7 +330,7 @@ while executando:
       
     
     if opcao_desejada2 == 4:
-        Senha = input("Digite a senha do sistema: ")
+        Senha = input("Por favor, insira a senha do usuário do sistema.: ")
         logado = senhaverificada(Senha, senhacadstrada)
 
         if logado:
