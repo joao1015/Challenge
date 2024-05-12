@@ -227,9 +227,12 @@ while executando:
                 opcao_agendamento = int(input("Digite a opcao:"))
                 if opcao_agendamento == 1:
                     data_marcada = str(input("digite a data desejada para atendimento: "))
-                    print("Escolha os horarios disponiveis para data: ")
-                    print("1 -8:00  \n2- - 11:45")
-                    print("3 -9:00 \n4 - 12:30")
+                    print("Escolha um horário disponível para a data selecionada:")
+                    print("1 - 8:00")
+                    print("2 - 11:45")
+                    print("3 - 9:00")
+                    print("4 - 12:30")
+
                     horario = int(input("Selecione horario"))
                     while horario <1 or horario>4:
                         print("opcao invalidada")            
@@ -251,9 +254,12 @@ while executando:
     elif opcao_desejada2 == 2:
         placa = input("Digite A PLACA: ")
 
-        print("Qual Marca do veiculo")
-        print("1 -Volkswagem  \n2- - Chevrolet")
-        print("3 - Ford \n4 - FIAT")
+        print("Por favor, selecione a marca do veículo:")
+        print("1 - Volkswagen")
+        print("2 - Chevrolet")
+        print("3 - Ford")
+        print("4 - Fiat")
+
 
         while True:
             marca = input("Digite a marca: ")
@@ -274,13 +280,15 @@ while executando:
                 else:
                     print("Por favor, digite apenas números.")
 
-            print("###################Autodiaguinostico##################################"
-                  "\nSELECIONE A ORIGEM DA FALHA")
-
-            print("1-BATERIA  \n2-MECANICO")
-            print("3-PANE-ELETRICA")
-            print("5-Sair")
-
+            print("################### Autodiagnóstico ##################################")
+            print("##                Bem-vindo ao sistema de Autodiagnóstico!            ##")
+            print("##            Por favor, selecione a origem da falha:                 ##")
+            print("##                                                                    ##")
+            print("##  1 - Bateria                                                       ##")
+            print("##  2 - Mecânico                                                      ##")
+            print("##  3 - Pane Elétrica                                                 ##")
+            print("##  4 - Sair                                                          ##")
+            print("#######################################################################")
             while True:
                 falha = input("Selecione a origem da falha: ")
                 if falha.isdigit():
@@ -290,9 +298,11 @@ while executando:
                     print("Por favor, digite apenas números.")
 
             if falharificada == 1:
-                print("No INDICADOR DE NIVEL DE BATERIA INDICAR QUAL COLORACAO:")
-                print("1-VERDE  \n2-PRETO")
-                print("3-BRANCO  \n2")
+                print("Por favor, selecione a cor indicada no indicador de nível de bateria:")
+                print("1 - Verde")
+                print("2 - Preto")
+                print("3 - Branco")
+                print("4 - Não sei")
 
                 while True:
                     bateria = input("Selecione a cor: ")
@@ -310,15 +320,20 @@ while executando:
                     print("Será necessário carga na bateria")
 
     elif opcao_desejada2 == 3:
-        no = input("Nome completo: ")
+        nome = input("Nome completo: ")
         email = input("Informe o email: ")
         telefone = input("Forneça o número de telefone para contato: ")
-        dadosveiculo = input("Informe o RENAVAM do veículo")
-       
+        dados_veiculo = input("Informe o RENAVAM do veículo: ")
+
+        marca_veiculo = input("Informe a marca do veículo: ")
+        modelo_veiculo = input("Informe o modelo do veículo: ")
+        ano_veiculo = input("Informe o ano do veículo: ")
+        placa_veiculo = input("Informe a placa do veículo: ")
         
-        Pergunta = input("Pergunta dúvidas: ")
-        print("Mais tarde breve entramos em contato")
-        print("Entraremos em contato em breve. Obrigado pela paciência.")
+
+        pergunta = input("Pergunta ou dúvidas: ")
+        print("Mais tarde entraremos em contato.")
+        print("Agradecemos pela sua paciência.")
 
     elif opcao_desejada2 == 5:
         print("Saindo...")
