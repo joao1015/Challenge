@@ -119,8 +119,11 @@ def lista_oficinas(lista):
 
 
 def menu():
-    print("\nCadastro de oficinas\n")
-    print("1 - Inclui Oficinas \n2 - Lista de oficinas cadastradas\n3 - Sair")
+    print("\nBem-vindo ao Cadastro de Oficinas\n")
+    print("Por favor, selecione uma opção:")
+    print("1 - Incluir Nova Oficina")
+    print("2 - Listar Oficinas Cadastradas")
+    print("3 - Sair")
     opcao = int(input("Selecione: "))
     return opcao
 
