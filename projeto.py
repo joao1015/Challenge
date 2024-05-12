@@ -69,7 +69,7 @@ def altera_exclui(lista, pos, acao):
 
 
 def submenu():
-    print("1 - Altera\n2 - Exclui\n3 - Faz nada")
+    print("1 - Altera\n2 - Exclui\n3 - Sair")
     opcao = int(input("Selecione: "))
     return opcao
 
@@ -102,7 +102,7 @@ def altera_oficina(lista,ind):
 
 oficinascadastradas=[]
 def submenu_oficinas():
-    print("1 - Altera\n2 - Exclui\n3 - Faz nada")
+    print("1 - Altera Dados\n2 - Exclui Oficinas\n3 - Sair")
     opcao = int(input("Selecione: "))
     return opcao
 
