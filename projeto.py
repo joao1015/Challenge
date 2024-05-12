@@ -223,7 +223,7 @@ while executando:
                     print("entrar em contato via telefone")
 
                 print("Deseja agendar servico:")
-                print("1 -sim  \n2- - nao")
+                print("1 -sim  \n2 - nao")
                 opcao_agendamento = int(input("Digite a opcao:"))
                 if opcao_agendamento == 1:
                     data_marcada = str(input("digite a data desejada para atendimento: "))
