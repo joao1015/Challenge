@@ -120,8 +120,8 @@ def menu():
     print("Por favor, selecione uma opção:")
     print("1 - Incluir Nova Oficina")
     print("2 - Listar Oficinas Cadastradas")
-    print("3 - Sair")
-    print("4 - incluir senha usuario")
+    print("3 - incluir senha usuario")
+    print("4 - Sair")
 
     opcao = int(input("Selecione: "))
     return opcao
@@ -136,6 +136,7 @@ def inclui_oficinas(oficinascads):
 def inclui_senhas():
     
     senhacadstrada.append(input("Insira a nova senha "))
+    print("senha cadastrada com suceso")
     
 
 
@@ -342,7 +343,7 @@ while executando:
         pergunta = input("Pergunta ou dúvidas: ")
         print("Mais tarde entraremos em contato.")
         print("Agradecemos pela sua paciência.")
-
+        time.sleep(2)
     elif opcao_desejada2 == 5:
         print("Saindo...")
         break
@@ -374,10 +375,10 @@ while executando:
                     acao = submenu_oficinas()
                     altera_exclui(oficinascadastradas, pos, acao)
 
-                elif selecao == 3:  # Se o usuário selecionar 3, sai do loop
+                elif selecao == 4:  # Se o usuário selecionar 3, sai do loop
                     print("Saindo...")
                     break
-                elif selecao == 4:  # Se o usuário selecionar 3, sai do loop
+                elif selecao == 3:  # Se o usuário selecionar 3, sai do loop
                     print("cadastro da nova senha")
                     inclui_senhas()
                     
