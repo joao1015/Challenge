@@ -52,20 +52,17 @@ def altera_exclui(lista, pos, acao):
         return  # Retorna imediatamente, sem fazer mais nada na função
     
     ind = pos * 5  # Calcula o índice baseado na posição da oficina
+
     if acao == 2:
         for _ in range(5):
             if ind < len(lista):
                 lista.pop(ind)
-       
-        print(".....................................", end='', flush=True)
-        time.sleep(2)
-        print("", end='', flush=True)
-        print("apagado")
-
+        print("Apagado com sucesso.")
     elif acao == 1:
         altera_oficina(lista, ind)
     else:
-        print("Fazendo nada")
+        print("Nenhuma ação realizada.")
+
 
 
 def submenu():
@@ -124,6 +121,8 @@ def menu():
     print("1 - Incluir Nova Oficina")
     print("2 - Listar Oficinas Cadastradas")
     print("3 - Sair")
+    print("4 - incluir senha usuario")
+
     opcao = int(input("Selecione: "))
     return opcao
 
@@ -133,6 +132,12 @@ def inclui_oficinas(oficinascads):
     oficinascadastradas.append(input("Logadouro: "))
     oficinascadastradas.append(int(input("Numero: ")))
     oficinascadastradas.append(input("Cep: "))
+
+def inclui_senhas():
+    
+    senhacadstrada.append(input("Insira a nova senha "))
+    
+
 
 
 executando = True
@@ -372,6 +377,10 @@ while executando:
                 elif selecao == 3:  # Se o usuário selecionar 3, sai do loop
                     print("Saindo...")
                     break
+                elif selecao == 4:  # Se o usuário selecionar 3, sai do loop
+                    print("cadastro da nova senha")
+                    inclui_senhas()
+                    
         else:
             print("Senha incorreta. Acesso negado.")
             time.sleep(3)  # Atraso antes de sair do programa
